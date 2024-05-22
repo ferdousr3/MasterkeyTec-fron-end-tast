@@ -1,0 +1,54 @@
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+}
+/* src/Partition.css */
+.partition {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.split-vertical {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.split-horizontal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.child {
+  position: relative;
+}
+
+.resizer {
+  background: #000;
+  width: 5px;
+  cursor: ew-resize;
+}
+
+.split-horizontal .resizer {
+  width: 100%;
+  height: 5px;
+  cursor: ns-resize;
+}
