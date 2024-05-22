@@ -6,8 +6,10 @@ import Header from "../components/shared/Header"
 const MainLayout = () => {
   return (
     <>
-      <Header />
+     <div className="container">
+     <Header />
       <Outlet />
+     </div>
     </>
   )
 }
